@@ -251,20 +251,12 @@ public class pnlInformacionCiudad extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblAnteriorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAnteriorMouseClicked
-        if (contador == 0) {
-            contador = listaImagenes.size() - 1;
-        } else {
-            contador--;
-        }
+     
         lblGaleria.setIcon(listaImagenes.get(contador));
     }//GEN-LAST:event_lblAnteriorMouseClicked
 
     private void lblSiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSiguienteMouseClicked
-        if (contador == listaImagenes.size() - 1) {
-            contador = 0;
-        } else {
-            contador++;
-        }
+       
 
         lblGaleria.setIcon(listaImagenes.get(contador));
     }//GEN-LAST:event_lblSiguienteMouseClicked
