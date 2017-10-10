@@ -209,12 +209,6 @@ public class pnlInformacionEvento extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
     private void cargar() {
-        txtNombre.setText(evento.getNombre());
-        txtInicio.setText(evento.fechaInicioToString());
-        txtHoraInicio.setText(evento.horaInicioToString());
-        txtFin.setText(evento.fechaFinToString());
-        txtHoraFin.setText(evento.horaFinToString());
-        txtUbicacion.setText(evento.getUbicacion());
-        txtDescripcion.setText(evento.getDescripcion());
+
     }
 }
