@@ -137,21 +137,7 @@ public class pnlDondeQue extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lstFiltrosValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstFiltrosValueChanged
-        pnlResultados.removeAll();
-        pnlResultados.repaint();
 
-        Iterator<ComercioActividad> it = lista.iterator();
-        while (it.hasNext()) {
-            ComercioActividad actual = it.next();
-            if (filtros.get(lstFiltros.getSelectedIndex()).equals(actual.getCategoria())) {
-                pResultadoDondeQue p = new pResultadoDondeQue(modelo, actual, padre, this, ciudad);
-                pnlResultados.add(p);
-            }
-        }
-
-        pnlResultados.setVisible(true);
-        pnlResultados.revalidate();
-        pnlResultados.repaint();
     }//GEN-LAST:event_lstFiltrosValueChanged
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
